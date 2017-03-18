@@ -25,4 +25,6 @@ passwd
 useradd -m -g users -G storage,power,wheel -s /bin/bash ccr
 passwd ccr
 pacman -S sudo gksu
+vi /etc/sudoers -> ALL=(ALL) ALL
+%wheel ALL=(ALL) ALL
 

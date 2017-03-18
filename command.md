@@ -21,4 +21,7 @@ pacman -S grub-bios
 grub-install --target=i386-pc --recheck /dev/sda
 grub-mkconfig -o /boot/grub/grub.cfg
 mkinitcpio -p linux
+passwd
+useradd -m -g users -G storage,power,wheel -s /bin/bash ccr
+passwd ccr
 

@@ -44,3 +44,17 @@ Server = http://repo.archlinux.fr/$arch
 
 #pacman -Sy yaourt
 
+#pacman -S ibus ibus-hangul
+
+'~/.bashrc'
+export GTK_IM_MODULE="ibus"
+export XMODIFIERS="@im=ibus"
+export QT_IM_MODULE="ibus"
+
+$ibus-setup
+$ibus-setup-hangul
+
+#yaourt -S ttf-nanum ttf-nanumgothic_coding
+
+'System Setting -> Region&Language -> Add English and Korean'
+

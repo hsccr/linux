@@ -24,4 +24,5 @@ mkinitcpio -p linux
 passwd
 useradd -m -g users -G storage,power,wheel -s /bin/bash ccr
 passwd ccr
+pacman -S sudo gksu
 

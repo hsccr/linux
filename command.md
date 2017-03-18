@@ -85,4 +85,6 @@ pacman -S git
 git config --global user.name "..."
 git config --global user.email "...."
 
+pacman -S ninja
+
 

@@ -87,4 +87,64 @@ git config --global user.email "...."
 
 pacman -S ninja
 
+pacman -S dante
 
+'/etc/sockd.conf'
+logoutput: /var/log/sockd.log
+logoutput: stderr
+debug: 9
+
+internal: enp3s0 port = 1080
+internal: 127.0.0.1 port = 1080
+
+external: enp3s0
+
+compatibility: sameport
+
+extension: bind
+
+external.rotation: route
+
+user.privileged: root
+
+user.notprivileged: ccr
+
+clientmethod: none
+
+socksmethod: pam.username
+
+# Who can access this proxy?
+# Accept only connections from the loopback, all ports
+client pass {
+ from: 0.0.0.0/0 to: 0.0.0.0/0
+}
+
+#Block all other connection attempts
+client block {
+ from: 0.0.0.0/0 to: 0.0.0.0/0
+ log: connect error
+}
+
+# Once connected, where can they go?
+socks block {
+ from: 0.0.0.0/0 to: 127.0.0.0/8
+ log: connect error
+}
+
+#Pass from the internal IP to anywhere
+socks pass {
+ from: 192.168.0.0/16 to: 0.0.0.0/0
+ protocol: tcp udp
+}
+
+#Pass from the loopback going anywhere
+socks pass {
+ from: 0.0.0.0/0 to: 0.0.0.0/0
+ protocol: tcp udp
+}
+
+# Block everything else
+socks block {
+ from: 0.0.0.0/0 to: 0.0.0.0/0
+ log: connect error
+}

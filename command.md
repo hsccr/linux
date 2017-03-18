@@ -6,4 +6,5 @@ cfdisk /dev/sda -> 8333:linux 82:swap
 fdisk -l
 mkfs.ext4 /dev/sda1
 mkswap /dev/sda2
+swapon /dev/sda2
 

@@ -1,2 +1,3 @@
 ip addr
+ip link
 

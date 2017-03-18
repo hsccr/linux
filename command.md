@@ -79,4 +79,6 @@ sshd: ALL
 systemctl start sshd
 systemctl enable sshd
 
+sudo shown -R USERNAME /home/USERNAME
+
 

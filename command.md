@@ -12,4 +12,6 @@ mkdir /mnt/boot
 pacstrap /mnt base base-devel
 genfstab -p /mnt >> /mnt/etc/fstab
 arch-chroot /mnt
+echo ccr > /etc/hostname
+vi /etc/timezone -> Asia/Seoul
 

@@ -60,3 +60,7 @@ $ibus-setup-hangul
 
 yaourt -S wget
 
+yaourt -S sublime-text-dev
+ln -s /opt/sublime_text_3/sublime_text /usr/bin/sublime
+
+

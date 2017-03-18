@@ -58,3 +58,5 @@ $ibus-setup-hangul
 
 'System Setting -> Region&Language -> Add English and Korean'
 
+yaourt -S wget
+

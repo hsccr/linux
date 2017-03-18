@@ -34,4 +34,5 @@ pacman -S dialog wpa_supplicant networkmanager
 pacman -S xf86-video-intel xorg-server gdm gnome gnome-shell
 pacman -S xterm
 systemctl enable gdm.service
+systemctl enable NetworkManager
 

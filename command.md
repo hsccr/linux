@@ -36,3 +36,11 @@ pacman -S xterm
 systemctl enable gdm.service
 systemctl enable NetworkManager
 
+'/etc/pacman.conf'
+
+[archlinuxfr]
+SigLeven = Never
+Server = http://repo.archlinux.fr/$arch
+
+#pacman -Sy yaourt
+

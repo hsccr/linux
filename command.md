@@ -63,4 +63,20 @@ yaourt -S wget
 yaourt -S sublime-text-dev
 ln -s /opt/sublime_text_3/sublime_text /usr/bin/sublime
 
+pacman -S openssh
+
+'/etc/ssh/ssh_config'
+ListenAddress 0.0.0.0
+ChallengeResponseAuthentication no
+UsePAM yes
+Subsystem sftp /usr/lib/ssh/sftp-server
+
+'/etc/hosts.allow'
+sshd: ALL
+
+'/etc/hots.deny'
+
+systemctl start sshd
+systemctl enable sshd
+
 

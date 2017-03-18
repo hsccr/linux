@@ -11,4 +11,5 @@ mount /dev/sda1 /mnt
 mkdir /mnt/boot
 pacstrap /mnt base base-devel
 genfstab -p /mnt >> /mnt/etc/fstab
+arch-chroot /mnt
 

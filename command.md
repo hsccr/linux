@@ -81,4 +81,8 @@ systemctl enable sshd
 
 sudo shown -R USERNAME /home/USERNAME
 
+pacman -S git
+git config --global user.name "..."
+git config --global user.email "...."
+
 

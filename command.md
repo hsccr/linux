@@ -30,4 +30,5 @@ vi /etc/sudoers -> ALL=(ALL) ALL
 exit
 umount -R /mnt
 reboot
+pacman -S dialog wpa_supplicant networkmanager
 

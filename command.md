@@ -153,3 +153,5 @@ systemctl enable sockd
 systemctl start sockd
 systmctl status -l sockd
 
+pacman -S chromium
+ 

@@ -158,3 +158,6 @@ pacman -S chromium
 pacman -S vlc
 pacman -S qt4
 
+tar xvjf file.bz2
+
+

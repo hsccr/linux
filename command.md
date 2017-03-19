@@ -154,4 +154,7 @@ systemctl start sockd
 systmctl status -l sockd
 
 pacman -S chromium
- 
+
+pacman -S vlc
+pacman -S qt4
+

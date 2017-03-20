@@ -5,3 +5,5 @@ export PKG_CONFIG_PATH=/usr/local/lib/pkgconfig:/usr/lib/pkgconfig
 
 $ pkg-config --list-all
 
+To do this in a distro-independent* fashion you can use ldconfig with grep, like this:
+ldconfig -p | grep libjpeg

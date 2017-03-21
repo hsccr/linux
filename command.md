@@ -160,4 +160,5 @@ pacman -S qt4
 
 tar xvjf file.bz2
 
+badblocks -wsv /dev/sda1
 

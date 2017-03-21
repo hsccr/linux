@@ -162,3 +162,13 @@ tar xvjf file.bz2
 
 badblocks -wsv /dev/sda1
 
+groupadd vpusers
+gpasswd -a apache vpusers
+gpasswd -a bob vpusers
+gpasswd -a alice vpusers
+
+
+chown -R apache:vpusers /your/directory
+
+chmod -R g+w /your/directory
+

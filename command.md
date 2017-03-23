@@ -172,3 +172,11 @@ chown -R apache:vpusers /your/directory
 
 chmod -R g+w /your/directory
 
+# pacman -S plasma kde-applications-meta plasma-mediacenter
+# pacman -S gnome gnome-extra gnome-tweak-tool
+# pacman -S xfce4 xfce4-goodies xfce4-mixer gstreamer0.10-good-plugins libxnvctrl xscreensaver
+# pacman -S cinnamon nemo-fileroller
+# pacman -S lxde
+# pacman -S lxqt
+# pacman -S i3 dmenu
+
